@@ -1,0 +1,93 @@
+{
+    "chapter_id": "3",
+    "title": "Unsafe Foods for Dogs",
+    "content": {
+        "text": "Here are some common foods dogs should NEVER eat.",
+        "categories": {
+            "1": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_1.png",
+                        "caption": "Chocolate"
+                    }
+                ],  
+                "text": "Contains theobromine, which is toxic to dogs and can lead to vomiting, diarrhea, rapid heart rate, seizures, and even death."
+            },
+            "2": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_2_1.png",
+                        "caption": "Grapes"
+                    },
+                    {
+                        "img": "../static/images/chapter3/unsafe_2_2.png",
+                        "caption": "Raisins"
+                    }
+                ],
+                "text": "Even in small amounts, can cause fatal kidney failure in dogs."
+            },
+            "3": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_3_1.png",
+                        "caption": "Onions"
+                    },
+                    {
+                        "img": "../static/images/chapter3/unsafe_3_2.png",
+                        "caption": "Garlic"
+                    }
+                ],
+                "text": "Contains sulfur compounds that can cause anemia by destroying red blood cells, leading to vomiting, diarrhea, red urine, collapse, and death."
+            },
+            "4": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_4_1.png",
+                        "caption": "Alcohol"
+                    },
+                    {
+                        "img": "../static/images/chapter3/unsafe_4_2.png",
+                        "caption": "Dough"
+                    }
+                ],
+                "text": "Alcohol can lead to intoxication, coma, and death. Raw dough can expand in the stomach, causing pain and potentially leading to ethanol poisoning."
+            },
+            "5": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_5.png",
+                        "caption": "Xylitol"
+                    }
+                ],
+                "text": "Can cause insulin release in dogs, leading to hypoglycemia, liver failure, and death."
+            },
+            "6": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_6.png",
+                        "caption": "Macadamia Nuts"
+                    }
+                ],
+                "text": "Can result in weakness, vomiting, tremors, depression, and elevated body temperature."
+            },
+            "7": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_7.png",
+                        "caption": "Avocado"
+                    }
+                ],
+                "text": "Contains persin, which can cause vomiting and diarrhea."
+            },
+            "8": {
+                "foods": [
+                    {
+                        "img": "../static/images/chapter3/unsafe_8.png",
+                        "caption": "Caffeine"
+                    }
+                ],
+                "text": "Can lead to rapid breathing, heart palpitations, and muscle tremors."
+            }
+        }
+    }
+}

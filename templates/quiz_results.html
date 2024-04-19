@@ -1,0 +1,36 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h2>Quiz Results</h2>
+    <p class="mt-3" style="font-size: 18px;">
+        Your final score is {{ score }} out of {{ total_score }}.
+    </p>
+
+    <div class="mt-4">
+        {% if review_chapters %}
+        <h3>Recommended Review:</h3>
+        <p class="mt-3" style="font-size: 18px;">Here are the chapters you might want to review once more.</p>
+        <div class="d-flex flex-column align-items-center mt-4">
+            {% for chapter_id in review_chapters %}
+            <a href="{{ url_for('learn', chapter_id=chapter_id) }}" class="btn-white" style="width: 50%;">
+                Chapter {{ chapter_id }}: {{ chapters[chapter_id]['title'] }}
+            </a>
+            {% endfor %}
+        </div>
+        {% else %}
+        <p style="font-size: 18px;">Congratulations! All answers correct!</p>
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='images/quiz/dog_highfive.gif') }}" alt="Dog Doing Highfive" width="300">
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="mt-4 mb-3 text-center">
+        <a href="/" class="btn-green">Return Home</a>
+    </div>
+    
+</div>
+
+{% endblock %}

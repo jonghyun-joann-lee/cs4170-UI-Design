@@ -1,0 +1,19 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h2>Quiz: Play Time!</h2>
+    <p class="mt-3" style="font-size: 14pt;">Ready to challenge yourself and have some fun? Let's get started!</p>
+    <div class="text-center">
+        <img src="{{ url_for('static', filename='images/quiz/dog_frisbee.gif') }}" alt="Dog Catching Frisbee" width="400">
+    </div>
+    <div class="d-flex justify-content-between mt-5">
+        <button id="review-chapters" class="btn-gray">Review Chapters</button>
+        <button id="start-quiz" class="btn-green">Start Quiz</button>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/quiz_intro.js') }}"></script>
+
+{% endblock %}

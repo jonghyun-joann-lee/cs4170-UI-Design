@@ -1,0 +1,21 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<script>
+
+</script>
+
+<div id="home-container" class="fluid-container text-center">
+    <h1>Welcome to Pawsitive Plate!</h1>
+    <p>Learn safe and healthy foods for your furry dog friends.</p>
+    <div class="image-container-bottom-aligned">
+        <img src="{{ img_bowl }}" alt="Dog Bowl" width="120" height="65">
+        <img src="{{ img_dog }}" alt="Dog" width="250" height="300">
+    </div>
+    <div class="mt-4">
+        <a href="{{ url_for('learn', chapter_id=1) }}" class="btn-green btn-shadow">Get Started</a>
+    </div>
+</div>
+
+{% endblock %}

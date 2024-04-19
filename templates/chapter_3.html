@@ -1,0 +1,35 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h2 id="chapter-title">Chapter {{ chapter.chapter_id }}: {{ chapter.title }}</h2>
+    <p class="mt-3" style="font-size: 14pt;">{{ chapter.content.text }}</p>
+    <div class="row">
+        {% for key, category in chapter.content.categories.items() %}
+        <div class="col-md-3 mb-3">
+            <div class="card">
+                <div class="card-front text-center">
+                    <div class="card-img-container">
+                        {% for food in category.foods %}
+                        <img src="{{ food.img }}" alt="{{ food.caption }}">
+                        {% endfor %}
+                    </div>
+                    <p>{{ category.foods|map(attribute='caption')|join(' and ') }}</p>
+                </div>
+                <div class="card-back">
+                    <p>{{ category.text }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="d-flex justify-content-between mt-2 mb-4">
+        <button id="previous-chapter" class="btn-gray">Previous Chapter</button>
+        <button id="start-quiz" class="btn-green">Start Quiz</button>
+    </div>
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/chapter_3.js') }}"></script>
+
+{% endblock %}

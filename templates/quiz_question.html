@@ -1,0 +1,37 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h3>Question {{ question.question_id }} out of {{ total_questions }}</h3>
+    <div class="row align-items-baseline">
+        <div class="col-10">
+            <p style="font-size: 20px">{{ question.question }}</p>
+        </div>
+        <div class="col-2">
+            <div id="current-score">Current Score: {{ current_score }}/{{ total_score }}</div>
+        </div>
+    </div>
+    
+    <form id="quiz-form" style="font-size: 18px" method="post" action="{{ url_for('quiz_question', question_id=question.question_id) }}">
+        {% for option in question.options %}
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="selected_option" id="option{{ loop.index }}" value="{{ option }}">
+            <label class="form-check-label" for="option{{ loop.index }}">
+                {{ option }}
+            </label>
+        </div>
+        {% endfor %}
+        <div class="text-center">
+            <button id="submit-answer" type="submit" class="btn-green mt-3 mb-3">Submit Answer</button>
+        </div>    
+    </form>
+
+    <div id="feedback"></div>
+    <div id="explanation"></div>
+    <div id="navigation" class="text-center"></div>
+</div>
+    
+<script type="text/javascript" src="{{ url_for('static', filename='js/quiz_question.js') }}"></script>
+
+{% endblock %}

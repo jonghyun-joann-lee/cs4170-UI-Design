@@ -1,0 +1,145 @@
+{
+    "chapter_id": "1",
+    "title": "Essential Nutrients for Dogs",
+    "content": {
+        "bowl": {
+            "img": "../static/images/chapter1/ch1_bowl.png",
+            "caption": "Dog Bowl"
+        },
+        "carbohydrates": {
+            "subtitle": "Carbohydrates",
+            "info": "Supply energy and dietary fiber. Fiber plays a key role in digestive health.",
+            "sources": [
+                {
+                    "img": "../static/images/chapter1/carbohydrates/carb_1.png",
+                    "caption": "Sweet Potato"
+                },
+                {
+                    "img": "../static/images/chapter1/carbohydrates/carb_2.png",
+                    "caption": "Brown Rice"
+                },
+                {
+                    "img": "../static/images/chapter1/carbohydrates/carb_3.png",
+                    "caption": "Barley"
+                },
+                {
+                    "img": "../static/images/chapter1/carbohydrates/carb_4.png",
+                    "caption": "Pumpkin"
+                },
+                {
+                    "img": "../static/images/chapter1/carbohydrates/carb_5.png",
+                    "caption": "Oat"
+                }
+            ],
+            "advice": ["All of these should be cooked and served plain, without any added sugars, salts, or seasonings."]
+        },
+        "vitamins": {
+            "subtitle": "Vitamins",
+            "info": "Necessary for normal eye function (Vitamin A), bone development (Vitamin D), skin health (Vitamin E), and blood clotting (Vitamin K).",
+            "sources": [
+                {
+                    "img": "../static/images/chapter1/vitamins/vitamin_1.png",
+                    "caption": "Carrot"
+                },
+                {
+                    "img": "../static/images/chapter1/vitamins/vitamin_2.png",
+                    "caption": "Spinach"
+                },
+                {
+                    "img": "../static/images/chapter1/vitamins/vitamin_3.png",
+                    "caption": "Broccoli"
+                },
+                {
+                    "img": "../static/images/chapter1/vitamins/vitamin_4.png",
+                    "caption": "Zucchini"
+                },
+                {
+                    "img": "../static/images/chapter1/vitamins/vitamin_5.png",
+                    "caption": "Blueberry"
+                }
+            ],
+            "advice": ["All of these can be given raw or cooked, but make sure to wash them and give in moderation."]
+        },
+        "minerals": {
+            "subtitle": "Minerals",
+            "info": "Main structural components of organs, tissues, body fluids, electrolytes, and muscle contractions.",
+            "sources": [
+                {
+                    "img": "../static/images/chapter1/minerals/mineral_1.png",
+                    "caption": "Cottage Cheese"
+                },
+                {
+                    "img": "../static/images/chapter1/minerals/mineral_2.png",
+                    "caption": "Meat"
+                },
+                {
+                    "img": "../static/images/chapter1/minerals/mineral_3.png",
+                    "caption": "Banana"
+                },
+                {
+                    "img": "../static/images/chapter1/minerals/mineral_4.png",
+                    "caption": "Kale"
+                },
+                {
+                    "img": "../static/images/chapter1/minerals/mineral_5.png",
+                    "caption": "Peanut"
+                }
+            ],
+            "advice": ["Check if your dog is lactose-intolerant before giving dairy products.", "Bananas peels should NOT be given.", "Peanut shells should NOT be given."]
+        },
+        "fat": {
+            "subtitle": "Fat",
+            "info": "Provide energy, support cell function, and aid in the absorption of fat-soluble vitamins.",
+            "sources": [
+                {
+                    "img": "../static/images/chapter1/fat/fat_1.png",
+                    "caption": "Meat"
+                },
+                {
+                    "img": "../static/images/chapter1/fat/fat_2.png",
+                    "caption": "Fish Oil"
+                },
+                {
+                    "img": "../static/images/chapter1/fat/fat_3.png",
+                    "caption": "Flaxseed Oil"
+                },
+                {
+                    "img": "../static/images/chapter1/fat/fat_4.png",
+                    "caption": "Coconut Oil"
+                },
+                {
+                    "img": "../static/images/chapter1/fat/fat_5.png",
+                    "caption": "Olive Oil"
+                }
+            ],
+            "advice": ["All of these should be given in moderation to avoid obesity. Oils can be added to regular food."]
+        },
+        "protein": {
+            "subtitle": "Protein (Amino Acids)",
+            "info": "Necessary for muscle, skin, hair, and nail formation. Animal protein sources tend to have higher essential amino acids critical for dogs.",
+            "sources": [
+                {
+                    "img": "../static/images/chapter1/protein/protein_1.png",
+                    "caption": "Chicken"
+                },
+                {
+                    "img": "../static/images/chapter1/protein/protein_2.png",
+                    "caption": "Beef"
+                },
+                {
+                    "img": "../static/images/chapter1/protein/protein_3.png",
+                    "caption": "Fish (e.g. Salmon, Sardines)"
+                },
+                {
+                    "img": "../static/images/chapter1/protein/protein_4.png",
+                    "caption": "Eggs"
+                },
+                {
+                    "img": "../static/images/chapter1/protein/protein_5.png",
+                    "caption": "Turkey"
+                }
+            ],
+            "advice": ["Always serve cooked, plain meat without bones to kill bacteria and prevent choking hazards."]
+        }
+    }
+}

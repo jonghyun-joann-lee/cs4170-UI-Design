@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+
+  <!-- jquery -->
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{{url_for('static', filename='css/main.css')}}">
+
+  <!-- Custom JS for Search Function -->
+
+
+  <title>Pawsitive Plate</title>
+</head>
+
+<body>
+
+  <div class="main-content">
+    <nav class="navbar navbar-expand-lg navbar-light bg-base">
+      <div class="container">
+        <a class="navbar-brand" href="/" style="padding-bottom: 10px;">
+          <img src="{{url_for('static', filename='images/logo_cropped.png')}}" alt="Logo" height="25">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link" href="{{ url_for('learn', chapter_id=1) }}">Nutrients</a>
+            <a class="nav-link" href="{{ url_for('learn', chapter_id=2) }}">Dog Foods</a>
+            <a class="nav-link" href="{{ url_for('learn', chapter_id=3) }}">Unsafe Foods</a>
+            <a class="nav-link" href="{{ url_for('quiz_intro') }}">Quiz</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+  </div>
+
+</body>
+
+</html>

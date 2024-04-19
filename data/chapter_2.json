@@ -1,0 +1,68 @@
+{
+    "chapter_id": "2",
+    "title": "Commercial Dog Foods",
+    "content": {
+        "aafco": {
+            "page_1": {
+                "text": "Commercial dog foods are formulated to meet the dietary needs of dogs. The key to ensuring these foods provide all essential nutrients is to look for the Association of American Feed Control Officials (AAFCO) statement on pet food packaging.",
+                "img_1": "../static/images/chapter2/AAFCO.png",
+                "caption_1": "Dog Food with AAFCO Statement",
+                "img_2": "../static/images/chapter2/magnifier.png",
+                "caption_2": "Magnifier"
+            },
+            "page_2": {
+                "text": {
+                    "statement": "\"(Name of food) is formulated to meet the nutritional levels established by the AAFCO Dog Food Nutrient Profiles for (life stage).\"",
+                    "explanation": "This means that the food is complete and balanced for a particular life stage.",
+                    "categories": "Two Categories of Life Stages:"
+                },
+                "life_stages": {
+                    "Adult Maintenance": {
+                        "image": {
+                            "img": "../static/images/chapter2/adult_dog.png",
+                            "caption": "Adult Dog"
+                        },
+                        "text": "These foods are intended for adult dogs."
+                    },
+                    "Growth and Reproduction": {
+                        "image": {
+                             "img": "../static/images/chapter2/pregnant_dog.png",
+                            "caption": "Pregnant Dog with Puppies"
+                        },
+                        "text": "These foods are designed for puppies and pregnant or lactating females."
+                    }
+                }
+            }
+        },
+        "dog_foods": {
+            "text": "Both dry and wet dog foods can provide complete nutrition for dogs, but they come with different benefits depending on a dog’s preferences, health conditions, and lifestyle.",
+            "dry_food": {
+                "benefits": {
+                    "title": "Dry Food Benefits",
+                    "bullets": [
+                        "Reduce tartar buildup in teeth",
+                        "Easier to store and measure",
+                        "More affordable, longer shelf life",
+                        "Can be used in food puzzles to enhance mental stimulation"
+                    ]
+                },
+                "img": "../static/images/chapter2/dry_food.png",
+                "caption": "Dry Dog Food"
+            },
+            "wet_food": {
+                "benefits": {
+                    "title": "Wet Food Benefits",
+                    "bullets": [
+                        "Provides more moisture",
+                        "More aromatic and flavorful",
+                        "Helps dogs feel fuller longer, aiding in weight loss",
+                        "Ease of chewing"
+                    ]
+                },
+                "img": "../static/images/chapter2/wet_food.png",
+                "caption": "Wet Dog Food"
+            },
+            "advice": "Always consult with a veterinarian to determine the best dietary choices for your dog."
+        }
+    }
+}

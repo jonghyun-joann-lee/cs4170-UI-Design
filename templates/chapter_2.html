@@ -1,0 +1,100 @@
+{% extends "navbar.html" %}
+
+{% block content %}
+
+<div class="container mt-3">
+    <h2 id="chapter-title">Chapter {{ chapter.chapter_id }}: {{ chapter.title }}</h2>
+
+    <div id="aafco_intro" class="mt-3 mb-5">
+        <p style="font-size: 14pt;">{{ chapter.content.aafco.page_1.text }}</p>
+        <div id="aafco-image-container">
+            <img src="{{ chapter.content.aafco.page_1.img_1 }}" alt="{{ chapter.content.aafco.page_1.caption_1 }}" id="aafco-food">
+            <img src="{{ chapter.content.aafco.page_1.img_2 }}" alt="{{ chapter.content.aafco.page_1.caption_2 }}" id="magnifier">
+        </div>
+    </div>
+    
+    <div id="aafco_details" class="hidden">
+        <div class="text-center">
+            <div id="aafco-statement" >{{ chapter.content.aafco.page_2.text.statement }}</div>
+            <div class="mt-1" style="font-size: 18px;">{{ chapter.content.aafco.page_2.text.explanation }}</div>
+            <div class="mt-5 mb-4" style="font-size: 20px;">{{ chapter.content.aafco.page_2.text.categories }}</div>
+        </div>
+        <div class="row mb-5">
+            <div class="col-md-2"></div>
+            {% for stage, content in chapter.content.aafco.page_2.life_stages.items() %}
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-front text-center">
+                        <div class="card-img-container">
+                            <img src="{{ content.image.img }}" alt="{{ content.image.caption }}">
+                        </div>
+                        <p>{{ stage }}</p>
+                    </div>
+                    <div class="card-back" style="font-size: 20px;"><p>{{ content.text }}</p></div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+
+    <div id="dog_foods" class="mt-3 hidden">
+        <p style="font-size: 14pt;">{{ chapter.content.dog_foods.text }}</p>
+        <div class="row mb-4">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-front text-center">
+                        <div class="card-img-container">
+                            <img src="{{ chapter.content.dog_foods.dry_food.img }}" alt="{{ chapter.content.dog_foods.dry_food.caption }}">
+                        </div>
+                        <p>{{ chapter.content.dog_foods.dry_food.benefits.title }}</p>
+                    </div>
+                    <div class="card-back" style="text-align: start;">
+                        <ul>
+                            {% for bullet in chapter.content.dog_foods.dry_food.benefits.bullets %}
+                                <li>{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-front text-center">
+                        <div class="card-img-container">
+                            <img src="{{ chapter.content.dog_foods.wet_food.img }}" alt="{{ chapter.content.dog_foods.wet_food.caption }}">
+                        </div>
+                        <p>{{ chapter.content.dog_foods.wet_food.benefits.title }}</p>
+                    </div>
+                    <div class="card-back" style="text-align: start;">
+                        <ul>
+                            {% for bullet in chapter.content.dog_foods.wet_food.benefits.bullets %}
+                                <li>{{ bullet }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <p class="advice-text">{{ chapter.content.dog_foods.advice }}</p>
+    </div>    
+    
+    <button id="previous-chapter" class="btn-gray mb-4">Previous Chapter</button>
+
+    <div class="d-flex justify-content-between mb-4">
+        <button id="back-aafco-intro" class="btn-gray hidden" style="padding: 10px 40px;">Back</button>
+        <button id="next-dog-foods" class="btn-green hidden" style="padding: 10px 40px;">Next</button>
+    </div>
+
+    <div class="d-flex justify-content-between mb-4">
+        <button id="back-aafco-details" class="btn-gray hidden" style="padding: 10px 40px;">Back</button>
+        <button id="next-chapter" class="btn-green hidden">Next Chapter</button>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="{{ url_for('static', filename='js/chapter_2.js') }}"></script>
+
+{% endblock %}
